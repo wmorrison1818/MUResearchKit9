@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D9FAB7C1C657E9100B49639 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FAB791C657E7A00B49639 /* ResearchKit.framework */; };
+		3D9FAB7D1C657E9100B49639 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FAB791C657E7A00B49639 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DDCE6FE1C657D9C001CDACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCE6FD1C657D9C001CDACB /* AppDelegate.swift */; };
 		3DDCE7001C657D9C001CDACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDCE6FF1C657D9C001CDACB /* ViewController.swift */; };
 		3DDCE7031C657D9C001CDACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDCE7011C657D9C001CDACB /* Main.storyboard */; };
@@ -18,6 +20,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3D9FAB781C657E7A00B49639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9FAB721C657E7A00B49639 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		3D9FAB7A1C657E7A00B49639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9FAB721C657E7A00B49639 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		3D9FAB7E1C657E9100B49639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9FAB721C657E7A00B49639 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 		3DDCE7121C657D9C001CDACB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3DDCE6F21C657D9B001CDACB /* Project object */;
@@ -34,7 +57,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3D9FAB801C657E9100B49639 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D9FAB7D1C657E9100B49639 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3D9FAB721C657E7A00B49639 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../ResearchKit-master-3/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		3DDCE6FA1C657D9B001CDACB /* RK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDCE6FD1C657D9C001CDACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DDCE6FF1C657D9C001CDACB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9FAB7C1C657E9100B49639 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +115,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D9FAB731C657E7A00B49639 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FAB791C657E7A00B49639 /* ResearchKit.framework */,
+				3D9FAB7B1C657E7A00B49639 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DDCE6F11C657D9B001CDACB = {
 			isa = PBXGroup;
 			children = (
+				3D9FAB721C657E7A00B49639 /* ResearchKit.xcodeproj */,
 				3DDCE6FC1C657D9B001CDACB /* RK1 */,
 				3DDCE7141C657D9C001CDACB /* RK1Tests */,
 				3DDCE71F1C657D9C001CDACB /* RK1UITests */,
@@ -138,10 +187,12 @@
 				3DDCE6F61C657D9B001CDACB /* Sources */,
 				3DDCE6F71C657D9B001CDACB /* Frameworks */,
 				3DDCE6F81C657D9B001CDACB /* Resources */,
+				3D9FAB801C657E9100B49639 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D9FAB7F1C657E9100B49639 /* PBXTargetDependency */,
 			);
 			name = RK1;
 			productName = RK1;
@@ -218,6 +269,12 @@
 			mainGroup = 3DDCE6F11C657D9B001CDACB;
 			productRefGroup = 3DDCE6FB1C657D9B001CDACB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D9FAB731C657E7A00B49639 /* Products */;
+					ProjectRef = 3D9FAB721C657E7A00B49639 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3DDCE6F91C657D9B001CDACB /* RK1 */,
@@ -226,6 +283,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D9FAB791C657E7A00B49639 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 3D9FAB781C657E7A00B49639 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9FAB7B1C657E7A00B49639 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 3D9FAB7A1C657E7A00B49639 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DDCE6F81C657D9B001CDACB /* Resources */ = {
@@ -284,6 +358,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3D9FAB7F1C657E9100B49639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 3D9FAB7E1C657E9100B49639 /* PBXContainerItemProxy */;
+		};
 		3DDCE7131C657D9C001CDACB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3DDCE6F91C657D9B001CDACB /* RK1 */;
@@ -401,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RK1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WMMHYC.RK1;
@@ -412,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RK1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WMMHYC.RK1;
@@ -486,6 +567,7 @@
 				3DDCE7271C657D9C001CDACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DDCE7281C657D9C001CDACB /* Build configuration list for PBXNativeTarget "RK1Tests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +576,7 @@
 				3DDCE72A1C657D9C001CDACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DDCE72B1C657D9C001CDACB /* Build configuration list for PBXNativeTarget "RK1UITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +585,7 @@
 				3DDCE72D1C657D9C001CDACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
